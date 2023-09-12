@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "400026364255",
+    "project_id": "apollo-android-zikrandmehr",
+    "storage_bucket": "apollo-android-zikrandmehr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400026364255:android:a85a03dc41197e739beeea",
+        "android_client_info": {
+          "package_name": "com.zam.apolloandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaS9TpPyFX36Fn9IqDpqXA1LaCnJCWfVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

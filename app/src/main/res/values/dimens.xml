@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- unified margins -->
+    <dimen name="margin_half">4dp</dimen>
+    <dimen name="margin_single">8dp</dimen>
+    <dimen name="margin_single_half">12dp</dimen>
+    <dimen name="margin_double">16dp</dimen>
+    <dimen name="margin_triple">24dp</dimen>
+    <dimen name="margin_quadruple">32dp</dimen>
+    <dimen name="margin_quintuple">40dp</dimen>
+    <dimen name="margin_sextuple">48dp</dimen>
+    <dimen name="margin_septuple">64dp</dimen>
+    <dimen name="margin_octuple">80dp</dimen>
+</resources>

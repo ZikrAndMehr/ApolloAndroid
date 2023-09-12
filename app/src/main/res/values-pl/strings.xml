@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--SignUp-->
+    <string name="email_is_required">*Wymagany adres email</string>
+    <string name="password_is_required">*Wymagane hasło</string>
+    <string name="loading">Ładowanie</string>
+    <string name="sign_in">Zaloguj się</string>
+    <string name="email">Email</string>
+    <string name="password">Hasło</string>
+    <string name="forgot_password">Zapomniałeś hasła?</string>
+    <string name="action_su">Nie masz konta?</string>
+    <string name="sign_up">Zarejestruj się</string>
+
+    <!--SignUp-->
+    <string name="action_si">Masz już konto?</string>
+    <string name="something_went_wrong">Coś poszło nie tak</string>
+    <string name="first_name">Imię</string>
+    <string name="last_name">Nazwisko</string>
+    <string name="address">Adres</string>
+    <string name="date_of_birth">Data urodzenia</string>
+    <string name="email_helper_text_empty">*Adres e-mail nie może być pusty</string>
+    <string name="email_helper_text_wrong">*Nieprawidłowy adres e-mail</string>
+    <string name="password_helper_text_empty">*Pole hasło nie może być puste</string>
+    <string name="password_helper_text_range">*Hasło powinno składać się z co najmniej %d znaków</string>
+    <string name="first_name_helper_text_empty">*Pole imię nie może być puste</string>
+    <string name="first_name_helper_text_sc">*Pole imię może zawierać tylko litery</string>
+    <string name="last_name_helper_text_empty">*Pole nazwisko nie może być puste</string>
+    <string name="last_name_helper_text_sc">*Pole nazwisko może zawierać tylko litery</string>
+    <string name="address_helper_text_empty">*Pole adres nie może być puste</string>
+    <string name="address_helper_text_range">*Adres powinien mieć długość od %1$d do %2$d znaków</string>
+    <string name="address_helper_text_sc">*Pole adres może zawierać tylko litery i cyfry</string>
+    <string name="date_helper_text_empty">*Pole data urodzenia nie może być puste</string>
+    <string name="date_helper_text_sc">*Nieprawidłowa data urodzenia</string>
+    <string name="date_helper_text_current">*Data urodzenia musi być wcześniejsza niż obecna data</string>
+
+    <!--PasswordForget-->
+    <string name="check_email">Proszę sprawdzić swoją skrzynkę e-mailową</string>
+    <string name="enter_your_email">Wprowadź adres e-mail swojego konta</string>
+    <string name="reset_your_password">Zresetuj swoje hasło</string>
+    <string name="password_reset">Wprowadź adres e-mail swojego konta, a my wyślemy Ci link do resetowania hasła.</string>
+    <string name="spre">Wyślij e-mail z resetowaniem hasła</string>
+
+    <!--Continents-->
+    <string name="sign_out">Wyloguj się</string>
+    <string name="pct">%.2f %%</string>
+    <string name="hash">#</string>
+
+    <!--Countries-->
+    <string name="country_name">Nazwa: %s \nNazwa rodzima: %s</string>
+    <string name="search_country_hint">Wyszukaj kraj</string>
+
+    <!--Settings-->
+    <string name="settings">Ustawienia</string>
+    <string name="profile">Profil</string>
+    <string name="language">Język</string>
+    <string name="english">Angielski</string>
+    <string name="polish">Polski</string>
+    <string name="theme">Temat</string>
+    <string name="light">Światło</string>
+    <string name="dark">Ciemny</string>
+    <string name="system_default">Ustawienie systemowe</string>
+    <string name="auto">Autom…</string>
+    <string name="custom">Zwycz…</string>
+
+</resources>

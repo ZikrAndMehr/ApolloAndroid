@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="myText"
+            type="String" />
+        <variable
+            name="myTextValue"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_triple"
+            android:layout_marginVertical="@dimen/margin_double"
+            android:text="@{myText+':'}"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_double"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@{myTextValue}" />
+
+    </LinearLayout>
+
+</layout>

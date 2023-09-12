@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="@dimen/margin_single">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="@dimen/margin_double"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_continent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_image_template" />
+
+    <TextView
+        android:id="@+id/tv_continent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_triple"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_star_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_star_count"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/hash"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_star_count"
+        app:layout_constraintStart_toEndOf="@+id/iv_star_count"
+        app:layout_constraintTop_toTopOf="@+id/iv_star_count" />
+
+    <ImageView
+        android:id="@+id/iv_star_count"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_star_count"
+        app:layout_constraintStart_toStartOf="@+id/tv_continent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_continent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ic_star_half" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

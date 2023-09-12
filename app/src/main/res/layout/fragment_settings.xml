@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui_layer.settings.SettingsFragment">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.zam.apolloandroid.ui_layer.settings.SettingsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_double"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/tv_first_name_s"
+                    layout="@layout/settings_text_view"
+                    app:myText="@{@string/first_name}"
+                    app:myTextValue="@{viewModel.firstName}" />
+
+                <include
+                    android:id="@+id/tv_last_name_s"
+                    layout="@layout/settings_text_view"
+                    app:myText="@{@string/last_name}"
+                    app:myTextValue="@{viewModel.lastName}" />
+
+                <include
+                    android:id="@+id/tv_email_s"
+                    layout="@layout/settings_text_view"
+                    app:myText="@{@string/email}"
+                    app:myTextValue="@{viewModel.email}" />
+
+                <include
+                    android:id="@+id/tv_date_s"
+                    layout="@layout/settings_text_view"
+                    app:myText="@{@string/date_of_birth}"
+                    app:myTextValue="@{viewModel.dateOfBirth}" />
+
+                <include
+                    android:id="@+id/tv_address_s"
+                    layout="@layout/settings_text_view"
+                    app:myText="@{@string/address}"
+                    app:myTextValue="@{viewModel.address}" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_double"
+                android:gravity="center"
+                android:text="@string/language"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/ch_group_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checkedChip="@id/ch_english"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <include
+                        android:id="@+id/ch_english"
+                        layout="@layout/settings_chip"
+                        app:myIcon="@{@drawable/ic_usa_flag}"
+                        app:myTextValue="@{@string/english}" />
+
+                    <include
+                        android:id="@+id/ch_polish"
+                        layout="@layout/settings_chip"
+                        app:myIcon="@{@drawable/ic_poland_flag}"
+                        app:myTextValue="@{@string/polish}" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_double"
+                android:gravity="center"
+                android:text="@string/theme"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/tb_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_single"
+                    app:singleSelection="true">
+
+                    <Button
+                        android:id="@+id/btn_light"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/light" />
+
+                    <Button
+                        android:id="@+id/btn_dark"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dark" />
+
+                    <Button
+                        android:id="@+id/btn_system_default"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/system_default" />
+
+                    <Button
+                        android:id="@+id/btn_auto"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/auto" />
+
+                    <Button
+                        android:id="@+id/btn_custom"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/custom" />
+
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_out"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_double"
+            android:layout_marginVertical="@dimen/margin_quadruple"
+            android:layout_marginTop="5dp"
+            android:onClick="@{ () -> viewModel.signOut() }"
+            android:text="@string/sign_out"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_settings" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
